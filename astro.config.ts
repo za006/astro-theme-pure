@@ -5,6 +5,12 @@ import { defineConfig, fontProviders } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
 
+
+
+
+
+
+
 // Local integrations
 import rehypeAutolinkHeadings from './src/plugins/rehype-auto-link-headings.ts'
 // Shiki
@@ -51,7 +57,7 @@ export default defineConfig({
     responsiveStyles: true,
     service: { entrypoint: 'astro/assets/services/sharp' },
     // domains: ['ghchart.rshah.org'],
-    remotePatterns: [{ protocol: 'https' }]
+    remotePatterns: [{ protocol: 'https' , hostname: 'cravatar.cn' }]
   },
   // Enable font preloading and optimization
   // https://docs.astro.build/en/guides/fonts/
